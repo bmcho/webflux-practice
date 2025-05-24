@@ -3,6 +3,7 @@ package com.bmcho.springwebflux.repository;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -13,15 +14,19 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
-@Table("USERS")
-public class User {
-
+@Table("posts")
+public class Post {
     @Id
     private Long id;
 
-    private String name;
-    private String email;
+    @Column("user_id")
+    private Long userId;
+
+    private String title;
+
+    private String content;
 
     @Column("created_at")
     @CreatedDate
@@ -29,5 +34,4 @@ public class User {
     @Column("updated_at")
     @LastModifiedDate
     private LocalDateTime updatedAt;
-
 }

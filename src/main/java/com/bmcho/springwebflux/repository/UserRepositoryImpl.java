@@ -14,7 +14,6 @@ public class UserRepositoryImpl implements UserRepository {
     private final ConcurrentHashMap<Long, User> userHashMap = new ConcurrentHashMap<>();
     private final AtomicLong sequence = new AtomicLong(1);
 
-
     @Override
     public Mono<User> save(User user) {
         var now = LocalDateTime.now();
