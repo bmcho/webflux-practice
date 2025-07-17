@@ -1,7 +1,7 @@
-package com.bmcho.webfluxpratice.service;
+package com.bmcho.webfluxpratice.basic.service;
 
-import com.bmcho.webfluxpratice.repository.Post;
-import com.bmcho.webfluxpratice.repository.PostR2dbcRepository;
+import com.bmcho.webfluxpratice.basic.repository.Post;
+import com.bmcho.webfluxpratice.basic.repository.PostR2dbcRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

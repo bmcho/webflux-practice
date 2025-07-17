@@ -1,4 +1,4 @@
-package com.bmcho.webfluxpratice.repository;
+package com.bmcho.webfluxpratice.basic.repository;
 
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;

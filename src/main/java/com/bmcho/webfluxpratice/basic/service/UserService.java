@@ -1,7 +1,7 @@
-package com.bmcho.webfluxpratice.service;
+package com.bmcho.webfluxpratice.basic.service;
 
-import com.bmcho.webfluxpratice.repository.User;
-import com.bmcho.webfluxpratice.repository.UserR2dbcRepository;
+import com.bmcho.webfluxpratice.basic.repository.User;
+import com.bmcho.webfluxpratice.basic.repository.UserR2dbcRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -39,9 +39,8 @@ public class UserService {
 
     public Mono<Void> deleteById(Long id) {
         return userR2dbcRepository.deleteById(id)
-                .flatMap(u -> reactiveRedisTemplate.unlink(getUserCacheKey.apply(id))
-                .then(Mono.empty())
-                );
+            .then(Mono.defer(() -> reactiveRedisTemplate.unlink(getUserCacheKey.apply(id))
+            .then(Mono.empty())));
     }
 
     public Mono<Void> deleteByName(String name) {

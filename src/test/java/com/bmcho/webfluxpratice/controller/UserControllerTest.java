@@ -1,9 +1,10 @@
 package com.bmcho.webfluxpratice.controller;
 
-import com.bmcho.webfluxpratice.dto.UserCreateRequest;
-import com.bmcho.webfluxpratice.dto.UserResponse;
-import com.bmcho.webfluxpratice.repository.User;
-import com.bmcho.webfluxpratice.service.UserService;
+import com.bmcho.webfluxpratice.basic.controller.UserController;
+import com.bmcho.webfluxpratice.basic.dto.UserCreateRequest;
+import com.bmcho.webfluxpratice.basic.dto.UserResponse;
+import com.bmcho.webfluxpratice.basic.repository.User;
+import com.bmcho.webfluxpratice.basic.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;

@@ -1,8 +1,8 @@
-package com.bmcho.webfluxpratice.controller;
+package com.bmcho.webfluxpratice.basic.controller;
 
-import com.bmcho.webfluxpratice.dto.PostCreateRequest;
-import com.bmcho.webfluxpratice.dto.PostResponse;
-import com.bmcho.webfluxpratice.service.PostService;
+import com.bmcho.webfluxpratice.basic.dto.PostCreateRequest;
+import com.bmcho.webfluxpratice.basic.dto.PostResponse;
+import com.bmcho.webfluxpratice.basic.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

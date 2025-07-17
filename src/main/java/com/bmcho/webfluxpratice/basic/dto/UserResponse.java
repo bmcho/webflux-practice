@@ -1,6 +1,6 @@
-package com.bmcho.webfluxpratice.dto;
+package com.bmcho.webfluxpratice.basic.dto;
 
-import com.bmcho.webfluxpratice.repository.User;
+import com.bmcho.webfluxpratice.basic.repository.User;
 import lombok.Builder;
 import lombok.Data;
 

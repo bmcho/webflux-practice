@@ -1,4 +1,4 @@
-package com.bmcho.webfluxpratice.controller;
+package com.bmcho.webfluxpratice.basic.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

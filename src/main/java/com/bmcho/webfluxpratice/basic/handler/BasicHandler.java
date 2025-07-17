@@ -1,4 +1,4 @@
-package com.bmcho.webfluxpratice.handler;
+package com.bmcho.webfluxpratice.basic.handler;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;

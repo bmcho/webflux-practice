@@ -1,6 +1,6 @@
-package com.bmcho.webfluxpratice.config;
+package com.bmcho.webfluxpratice.basic.config;
 
-import com.bmcho.webfluxpratice.handler.BasicHandler;
+import com.bmcho.webfluxpratice.basic.handler.BasicHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

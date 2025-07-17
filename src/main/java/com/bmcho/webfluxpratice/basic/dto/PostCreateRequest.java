@@ -1,4 +1,4 @@
-package com.bmcho.webfluxpratice.dto;
+package com.bmcho.webfluxpratice.basic.dto;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.bmcho.webfluxpratice.repository;
+package com.bmcho.webfluxpratice.basic.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.r2dbc.core.DatabaseClient;

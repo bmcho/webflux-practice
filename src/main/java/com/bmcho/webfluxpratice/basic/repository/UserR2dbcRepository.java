@@ -1,4 +1,4 @@
-package com.bmcho.webfluxpratice.repository;
+package com.bmcho.webfluxpratice.basic.repository;
 
 import org.springframework.data.r2dbc.repository.Modifying;
 import org.springframework.data.r2dbc.repository.Query;

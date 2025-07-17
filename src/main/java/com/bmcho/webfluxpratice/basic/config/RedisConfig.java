@@ -1,6 +1,6 @@
-package com.bmcho.webfluxpratice.config;
+package com.bmcho.webfluxpratice.basic.config;
 
-import com.bmcho.webfluxpratice.repository.User;
+import com.bmcho.webfluxpratice.basic.repository.User;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
